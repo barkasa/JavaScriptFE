@@ -2,8 +2,8 @@
 
 const piString = "3.14";
 const piNumber = Number(piString);
-console.log(piString == piNumber);
-console.log(piString === piNumber);
+console.log(piString == piNumber);//true
+console.log(piString === piNumber);//false
 
 //задача №2
 
@@ -15,11 +15,11 @@ let nutsPrice = null;
 let buying = tomatPrice * 2 + cucumberPrice * 2 + applePrice * 2;
 let rest = totalSum - buying;
 
-console.log(rest);
+console.log(rest);//40
 nutsPrice == rest;
 
 if (nutsPrice > buying) {
-  console.log("Больше потратили на орехи");
+  console.log("Больше потратили на орехи");//false
 } else {
-  console.log("Больше потратили на фрукты и овощи");
+  console.log("Больше потратили на фрукты и овощи");//true
 }
