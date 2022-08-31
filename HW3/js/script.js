@@ -26,6 +26,27 @@ camelize("my-short-string");
 camelize("background-color");
 camelize("list-style-image");
 camelize("-webkit-transition");
+//--------------------------------------------------------------------
+//var2
+function camelize(str) {
+  let anyStr = str
+
+    .split("-")
+    .map(function (word, index) {
+      if (index == 0) {
+        return word;
+      }
+      return word[0].toUpperCase() + word.slice(1);
+    })
+    .join("");
+
+  console.log(anyStr);
+}
+camelize("my-short-string");
+camelize("background-color");
+camelize("list-style-image");
+camelize("-webkit-transition");
+
 
 //----------------------------------------------------------------------------------------------
 // Second level: Задача: написать функцию, принимающую массив чисел
