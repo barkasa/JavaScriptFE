@@ -28,12 +28,8 @@
 // console.log(paris.age());
 //------------------------------------------------------------------------------------------------------
 // Second level:
-
-function getMyAgeDifference(ageNumber) {
-  let res = this.age() - ageNumber;
-
-  function yearIdentifier() {
-    let yearStr = String(res);
+function yearIdentifier(year) {
+    let yearStr = String(year);
     let yearEnd = yearStr.slice(-1);
 
     switch (yearEnd) {
@@ -47,7 +43,12 @@ function getMyAgeDifference(ageNumber) {
         return "лет.";
     }
   }
-  return ` ${this.name} старше меня на ${res} ${yearIdentifier()}`;
+
+function getMyAgeDifference(ageNumber) {
+  let res = this.age() - ageNumber;
+
+  
+  return ` ${this.name} старше меня на ${res} ${yearIdentifier(res)}`;
 }
 
 function getAge() {
@@ -68,14 +69,14 @@ berlin.myAge = getMyAgeDifference;
 let paris = {
   name: "Париж",
   population: 6000000,
-  foundingDate: -53,
+  foundingDate: -51,
   currentDate: 2022,
 };
 
 paris.age = getAge;
 paris.myAge = getMyAgeDifference;
 
-console.log(`Берлину: ${berlin.age()} лет.`);
-console.log(`Парижу: ${paris.age()} лет.`);
+console.log(`Берлину: ${berlin.age()} ${yearIdentifier(berlin.age())}`);
+console.log(`Парижу: ${paris.age()} ${yearIdentifier(paris.age())}`);
 console.log(berlin.myAge(42));
 console.log(paris.myAge(44));
