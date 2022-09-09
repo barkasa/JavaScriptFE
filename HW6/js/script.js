@@ -46,7 +46,9 @@ let changeInputRight = document.querySelector(".change-input-right");
 changeButton.addEventListener("click", changeInput);
 
 function changeInput() {
-  //   changeInputLeft.value = "text";
-  changeInputLeft.value(changeInputRight);
-  //   changeInputRight.textContent = changeInputRight.value;
+  let changeInputLeftValue = changeInputLeft.value;
+  changeInputLeft.value = changeInputRight.value;
+  changeInputRight.value = changeInputLeftValue;
+
+
 }
