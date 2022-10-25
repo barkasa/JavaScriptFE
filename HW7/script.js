@@ -56,3 +56,42 @@ console.log(
     "Чёрный обелиск"
   )
 ); //Петя
+
+//=========================================================DZ
+// ДЗ* Функция solveEquasion принимает на вход строку вида
+// x <знак операции> <число> = <число> и возвращает значение x
+
+function reduce(a, b) {
+  let res = a - b;
+  return res;
+}
+
+function devide(a, b) {
+  return a / b;
+}
+
+function solveEquasion(str) {
+  let item = str.split(" ");
+  const a = +item[4]; 
+  const b = +item[2]; 
+  const indexMultOrPlus = item[1];
+  if (indexMultOrPlus === "+") {
+    return reduce(a, b);
+  }
+  if (indexMultOrPlus === "*") {
+    return devide(a, b);
+  } 
+    
+   
+}
+
+console.log(solveEquasion("x + 5 = 9")); 
+console.log(solveEquasion("x * 5 = 30"));
+
+
+
+
+
+
+
+
