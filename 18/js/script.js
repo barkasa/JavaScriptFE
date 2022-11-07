@@ -1,11 +1,3 @@
-// const arr = [1, 2, 3, 4, 5, 6, 7];
-// let thirdAndFourthIndexes = arr.find((item) => {
-//   if (item > 3 && item < 4) {
-//     return true;
-//   }
-// });
-
-// console.log(thirdAndFourthIndexes); // 0
 
 const arr = ["Apple", "Orange", "Lemon", "Cherry", "Apple"];
 
