@@ -1,0 +1,22 @@
+img {
+  width: 50px;
+  cursor: pointer;
+  border: 5px solid rgb(255, 255, 255);
+  margin: 5px;
+}
+
+img:hover {
+  border: 5px solid rgb(202, 202, 202);
+
+  transition: 250ms;
+}
+
+img.isActiv {
+  width: 300px;
+  float: right;
+  /* position: fixed; */
+  /* z-index: 9999; */
+}
+body {
+  background-color: rgb(245, 245, 245);
+}
