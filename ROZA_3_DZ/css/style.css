@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: rgb(129, 140, 136); */
+}
+
+.isActive {
+  display: none;
+  /* color: blue; */
+}
+.isColor {
+  /* display: none; */
+  color: rgb(255, 89, 0);
+}
+
+.button {
+  margin: 10px;
+}
+
+.active {
+  box-shadow: 0 0 10px #000;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* ------------------------------- */
+
+.button {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: rgb(140, 140, 140);
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.wraapperList {
+  /* margin: 5px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  color: aliceblue;
+  /* font-size: large; */
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); */
+}
+.title {
+  margin-bottom: 15px;
+}
+.dounSection {
+  margin-top: 5px;
+  width: 600px;
+}
+.wraapper {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  /* box-shadow: 0 0 3px rgb(90, 98, 95); */
+}
+
+/* ----------------------------- */
+.keyboardWrapp {
+  display: flex;
+  justify-content: center;
+}
+.keyboard {
+  /* position: fixed; */
+  /* left: 0; */
+  bottom: 0;
+
+  max-width: 820px;
+  width: 810px;
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: rgb(29, 63, 61);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  user-select: none;
+  transition: bottom 0.4s;
+  text-align: center;
+  /* justify-content: center; */
+}
+.keysButton {
+  height: 45px;
+  width: 6%;
+  max-width: 90px;
+  margin: 3px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(40, 87, 70);
+  color: aliceblue;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  position: relative;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.keyActive {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.nonActive {
+  background-color: rgb(40, 87, 70);
+}
+
+.keyboard-wide {
+  width: 12%;
+}
+.keyboard-wide-extra {
+  width: 36%;
+  max-width: 500px;
+}
+.textInput {
+  /* display: none; */
+  width: 200px;
+  height: 100px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(42, 83, 83, 0.714);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+}
