@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forma</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <form action="" method="" name="" target=""></form> -->
+    <!-- // method - get/post -->
+    <!-- <form name="test-form">
+      <label for="first-name">Имя</label> <br />
+      <input type="text" id="first-name" required /> <br />
+      <label for="last-name">Фамилия</label> <br />
+      <input type="text" id="last-name" /> <br />
+
+      <button>Отправить</button>
+      <!-- <input type="submit"> -->
+    <!-- </form> -->
+    <form id="form">
+      <div class="inputs">
+        <input type="text" placeholder="Название" name="title" id="title" />
+        <input type="number" placeholder="Цена" name="price" id="price" />
+      </div>
+      <div><button>Добавить</button></div>
+    </form>
+    <div class="password">
+      <input
+        type="password"
+        placeholder="Введите пароль"
+        name="password"
+        id="password-input"
+      />
+      <button class="password-control">Показать пароль</button>
+    </div>
+    <div class="total"><button class="button-total">Итого:</button></div>
+
+    <section id="products"></section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
