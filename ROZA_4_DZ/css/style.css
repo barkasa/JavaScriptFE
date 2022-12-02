@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.conteiner {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 25px;
+  background-color: rgb(223, 223, 223);
+  box-shadow: 2px 2px 5px rgb(148, 148, 148);
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 130px;
+  background: none;
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 4px;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* transition: 0.5s; */
+}
+button:hover {
+  background-color: rgb(223, 223, 223);
+}
+button:active {
+  background-color: rgb(135, 135, 135);
+  color: #fff;
+}
+.sleider {
+  width: 256px;
+  height: 144px;
+  /* border: 2px solid #000; */
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.clider-line {
+  height: 144px;
+  width: 2304px;
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  position: relative;
+}
+.film-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.film {
+  width: 25px;
+  height: 35px;
+
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(95, 95, 95);
+}
