@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather";
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+header {
+  min-width: 1120px;
+  min-height: 779px;
+
+  background-image: url("../media/Rectangle\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  max-width: 589px;
+  height: 136px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 66.37px;
+  color: #ffffff;
+  padding-top: 197px;
+  /* text-align: center; */
+}
+.button {
+  width: 270px;
+  height: 69.76px;
+  background-color: #005fa3;
+  color: #ffffff;
+  font-family: "Lato";
+  font-style: "Regular";
+  font-size: 18px;
+  line-height: 24.84px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 426px;
+  /* margin-top: 93px; */
+}
+
+@media screen and (min-width: 630px) and (max-width: 1120px) {
+  .container {
+    min-width: 640px;
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    min-width: 630px;
+    min-height: 670px;
+  }
+
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 180px;
+  }
+}
+
+@media screen and (min-width: 255px) and (max-width: 630px) {
+  header {
+    min-width: 255px;
+    min-height: 450px;
+  }
+  .container {
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    max-width: 250px;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 50px;
+  }
+  .title-block {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 50px;
+    left: 5px;
+  }
+  .button {
+    left: 25px;
+    width: 200px;
+    height: 69.76px;
+
+    top: 256px;
+  }
+}
+
+/* //--------------------section services  */
+.services {
+  min-height: 1242px;
+  background-color: #ebebeb;
+  padding: 140px;
+}
+
+.services-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.services-h1 {
+  font-size: 48px;
+  font-weight: 900px;
+  line-height: 66.37px;
+
+  margin-bottom: 102px;
+}
+.services-h4 {
+  font-size: 24px;
+  font-family: "Lato";
+  font-style: "Regular";
+  color: #bdbdbd;
+  margin-bottom: 40px;
+}
+.service-img-block {
+  width: 350px;
+  height: 360px;
+  background-image: url(..//media/Rectangle\ 2.png);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 24px;
+  line-height: 30.24px;
+  color: #ffffff;
+  padding: 0 0 45px 45px;
+}
+@media screen and (min-width: 630px) and (max-width: 1120px) {
+  .services {
+    min-width: 754px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .services-item {
+    grid-template-columns: 1fr;
+  }
+  .service-img-block {
+    min-width: 592px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .service-p {
+    width: 316px;
+    margin-right: 199px;
+  }
+  .services-h1 {
+    width: 522px;
+    margin-right: 145px;
+  }
+}
+/* //--------------------section about  */
+
+.about {
+  min-height: 735px;
+  font-family: "Lato";
+}
+.about-block {
+  display: flex;
+  justify-content: space-between;
+}
+.about-item {
+  height: 530px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.about-h4 {
+  font-size: 24px;
+  line-height: 33.12px;
+  color: #bdbdbd;
+  margin-top: 31px;
+}
+.about-h2 {
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69.39px;
+  margin-top: 40px;
+}
+.about-h2_blue {
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69.39px;
+  color: #005fa3;
+}
+.about-text {
+  max-width: 445px;
+  font-style: "Light";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24.84px;
+
+  margin-top: 60px;
+}
+.about-keys {
+  display: grid;
+
+  align-items: center;
+
+  grid-template-rows: repeat(3, 1fr);
+  width: 255px;
+  height: 255px;
+  background-color: #ebebeb;
+
+  padding: 30px 40px;
+}
+.isAktive {
+  background-color: #005fa3;
+  color: #ffffff;
+}
+.about-h1 {
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 66px;
+}
+.about-p {
+  max-width: 107px;
+  font-size: 14px;
+
+  font-weight: 700;
+
+  line-height: 18.48px;
+}
+.about-a {
+  font-weight: 700;
+  font-size: 14px;
+
+  line-height: 16.8px;
+  color: #005fa3;
+}
+.about-a_isAktive {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 630px) and (max-width: 1120px) {
+  .about {
+    min-width: 754px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .about-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .about {
+    min-height: 1283px;
+    padding: 0 107px 0 85px;
+  }
+  .about-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 145px;
+  }
+  .about-keys {
+    width: 562px;
+    height: 120px;
+    align-items: center;
+
+    grid-template-columns: repeat(3, 1fr);
+    padding: 33px 77px;
+
+    margin-bottom: 0px;
+  }
+  .about-a {
+    margin-left: 42px;
+  }
+  .about-h4 {
+    margin-top: 114px;
+  }
+}
+
+/* //--------------------section contact */
+
+.contact {
+  min-width: 1120px;
+  min-height: 623px;
+
+  background-image: url("../media/Rectangle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-title {
+  font-size: "Black";
+  font-size: 48px;
+  line-height: 69.39px;
+  margin-top: 122px;
+}
+.contact-p {
+  max-width: 445px;
+  font-family: "Lato";
+  font-style: "Light";
+  font-size: 18px;
+  line-height: 24.84px;
+  margin-top: 60px;
+}
+.contact-block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.contact-suport {
+  display: flex;
+  margin-top: 135px;
+}
+.suport-message {
+  margin-top: 35px;
+}
+.support-button {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+.message-line {
+  margin-top: 84px;
+}
+
+.contact-tel,
+.contact-Email {
+  font-family: "Lato";
+  font-style: "Light";
+  font-size: 21px;
+  line-height: 28.98px;
+}
+.fa-regular {
+  font-size: 35px;
+}
+.suport-familia {
+  margin-left: 30px;
+}
+.name-p,
+.familia-p,
+.message-p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.08px;
+  margin-bottom: 15px;
+}
+.name-user,
+.familia-user,
+.message-user {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 28.98px;
+  margin-bottom: 15px;
+}
+.line {
+  width: 255px;
+  height: 1px;
+  background-color: #ffffff;
+}
+.message-line {
+  width: 540px;
+  height: 1px;
+  background-color: #ffffff;
+}
+.button-support {
+  width: 270px;
+  height: 60px;
+  background-color: #005fa3;
+  color: #ffffff;
+  font-family: "Lato";
+  font-style: "Regular";
+  font-size: 18px;
+  line-height: 24.84px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 630px) and (max-width: 1120px) {
+  .contact {
+    min-width: 754px;
+    min-height: 890px;
+    display: flex;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-title {
+    margin-top: 29px;
+    margin-right: 229px;
+  }
+  .contact-p {
+    margin-top: 44px;
+  }
+  .contact-block {
+    margin-top: 33px;
+    margin-right: 80px;
+  }
+  .suport-block {
+    margin-top: 160px;
+  }
+  .support-button {
+    margin-bottom: 135px;
+    margin-right: 147px;
+  }
+}
+
+/* //--------------------section footer */
+footer {
+  min-height: 120px;
+  padding: 50px;
+}
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-p {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19.32px;
+}
+
+@media screen and (max-width: 1120px) {
+  .footer-block {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .footer-p {
+    margin-right: 73px;
+  }
+}
