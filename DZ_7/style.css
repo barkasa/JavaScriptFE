@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  align-items: center;
+  border: 3px solid rgb(157, 157, 157);
+  background-color: rgba(165, 165, 165, 0.483);
+  border-radius: 18px;
+}
+
+.imges {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  margin: 25px 25px;
+  gap: 35px;
+}
+
+.active {
+  color: orange;
+}
+
+.div_rating {
+  display: flex;
+  width: 120px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.buttons button {
+  border: 3px solid rgb(157, 157, 157);
+  padding: 10px;
+  background-color: transparent;
+  color: rgba(165, 165, 165, 0.483);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 150px;
+}
+
+.buttons button:hover {
+  background-color: rgba(165, 165, 165, 0.483);
+  color: white;
+}
