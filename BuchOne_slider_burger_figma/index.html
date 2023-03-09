@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW_BuchOne_website_layout_slider</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__ihnen">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/Group 1.png" alt="logo" />
+          </a>
+          <nav class="menu__wraper">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">услуги</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">кейсы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">о компании</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger__menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="burger__content"></div>
+      </main>
+    </header>
+
+    <!--slider-section /////////////////////////////////////////////////////// -->
+    <section class="slider__section">
+      <div class="container">
+        <div class="slider__ihnen">
+          <div class="title__block">
+            <h1 class="title__item">Бухгалтерские услуги в вашем городе</h1>
+            <button class="title__button">Наша презентация</button>
+          </div>
+          <div class="trigger__block">
+            <div id="mainSliderDots" class="dots dots-grey"></div>
+            <div class="trigger">
+              <button id="slider_prev_btn" class="prev-btn btn_grey"><</button>
+              <button id="next_prev_btn" class="next-btn btn_grey">></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--services-section /////////////////////////////////////////////////////// -->
+    <section class="services_section">
+      <div class="container">
+        <div class="services_ihnen">
+          <div class="service_title">
+            <p class="services_p">Наши услуги</p>
+            <h2 class="services_h2">Мы специализируемся</h2>
+          </div>
+          <div class="services_item">
+            <div class="service_block">
+              <p class="ihnen_service_p">Бухгалтерское обслуживание</p>
+            </div>
+            <div class="service_block">
+              <p class="ihnen_service_p">Строительное обслуживание</p>
+            </div>
+            <div class="service_block">
+              <p class="ihnen_service_p">Финансовое обслуживание</p>
+            </div>
+            <div class="service_block">
+              <p class="ihnen_service_p">Техническое обслуживание</p>
+            </div>
+            <div class="service_block">
+              <p class="ihnen_service_p">Юредическое обслуживание</p>
+            </div>
+            <div class="service_block">
+              <p class="ihnen_service_p">Услуги и сервисы иного хорактера</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--abaut-section /////////////////////////////////////////////////////// -->
+    <section class="about_section">
+      <div class="container">
+        <div class="about_ihnen">
+          <div class="about_info">
+            <h4 class="about">О нас</h4>
+
+            <h2 class="about_title">
+              Компания <span class="about_title2">ИвановПром</span>
+            </h2>
+            <p class="about_text">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века. В то время некий безымянный
+              печатник создал большую коллекцию размеров и форм шрифтов,
+              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+              только успешно пережил без заметных изменений пять веков, но и
+              перешагнул в электронный дизайн.
+            </p>
+          </div>
+          <div class="about_items">
+            <div class="about_box">
+              <h2 class="about_amount">90</h2>
+              <p class="about_done">Завершено крупных сделок</p>
+              <a class="about_link" href="#">Все кейсы</a>
+            </div>
+            <div class="about_box">
+              <h2 class="about_amount">50</h2>
+              <p class="about_done">Зарубежных сделок</p>
+              <a class="about_link" href="#">Все кейсы</a>
+            </div>
+            <div class="about_box">
+              <h2 class="about_amount">10</h2>
+              <p class="about_done">Междурародных выставок</p>
+              <a class="about_link" href="#">Все кейсы</a>
+            </div>
+            <div class="about_box">
+              <h2 class="about_amount">70</h2>
+              <p class="about_done">Завершено средних сделок</p>
+              <a class="about_link" href="#">Все кейсы</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--client-section /////////////////////////////////////////////////////// -->
+    <section class="clients_section">
+      <div class="container">
+        <div class="clients_ihnen">
+          <div class="clients_title">
+            <p class="clients_p">Наши клиенты</p>
+            <h2 class="clients_h2">С нами работают</h2>
+          </div>
+          <div class="clients_slider"></div>
+          <div class="trigger__block">
+            <div id="clientDots" class="dots dots-blau"></div>
+            <div class="trigger">
+              <button id="prevclient" class="prev-btn btn_blau"><</button>
+              <button id="nextclient" class="next-btn btn_blau">></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--fitback-section /////////////////////////////////////////////////////// -->
+    <section class="fitback_section">
+      <div class="container">
+        <div class="fitback_ihnen">
+          <div class="fitback_title">
+            <p class="fitback_p">Отзывы</p>
+            <h2 class="fitback_h2">Ваши благодарности</h2>
+          </div>
+
+          <div class="fitback_content"></div>
+          <div class="trigger__block">
+            <div id="fitbackDots" class="dots dots-blau"></div>
+            <div class="trigger">
+              <button id="prevFit" class="prev-btn btn_blau"><</button>
+              <button id="nextFit" class="next-btn btn_blau">></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contact-section /////////////////////////////////////////////////////// -->
+    <section class="contact_section">
+      <div class="container">
+        <div class="contacts">
+          <div class="contact-connection">
+            <h2 class="contact-title">Связь с нами</h2>
+            <p class="contact-p">
+              У вас остались вопросы? Напишите нам - мы ответим в ближайшее
+              время!
+            </p>
+            <div class="contact-block">
+              <span class="tel_logo"
+                ><img src="images/Vector (1).png" alt="icon"
+              /></span>
+              <p class="contact-tel">+7 (111) 222-33-44</p>
+              <span class="tel_logo tel"
+                ><img src="images/Vector (2).png" alt="icon"
+              /></span>
+              <p class="contact-Email">order@bu-one.ru</p>
+            </div>
+          </div>
+          <div class="suport-block">
+            <div class="contact-suport">
+              <div class="suport-name">
+                <p class="name-p">Имя</p>
+                <p class="name-user">Ваня</p>
+                <div class="line"></div>
+              </div>
+              <div class="suport-familia">
+                <p class="familia-p">Фамилия</p>
+                <p class="familia-user">Морозов</p>
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="suport-message">
+              <p class="message-p">Сообщение</p>
+              <p class="message-user">Ваше сообщение</p>
+              <div class="message-line"></div>
+            </div>
+            <div class="support-button">
+              <button class="button-support">Отправить сообщение</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //--------------------section footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-block">
+          <p class="footer-p">2022 (с) Все права защищены. БухОне.ру</p>
+          <p class="footer-p">Разработано: BuhOne</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/funk.js"></script>
+    <script src="./js/slider_logic.js"></script>
+    <script src="./js/burger_logic.js"></script>
+  </body>
+</html>
